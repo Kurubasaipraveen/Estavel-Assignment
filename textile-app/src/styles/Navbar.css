@@ -20,7 +20,10 @@
   
   .logo-image {
     width: 200px;
-    height: 100px;
+    height: 80px;
+  }
+  .i,.right-icon{
+    font-size: 30px;
   }
   
   .logo-text {

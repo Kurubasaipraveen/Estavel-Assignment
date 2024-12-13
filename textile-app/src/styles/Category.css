@@ -5,6 +5,7 @@
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
     text-align: center;
+    height: 100vh;
   }
   
   /* Header Section */
@@ -14,12 +15,16 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: start;
+    margin-left: 100px;
   }
   
   .category-header h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: white; /* Main heading in white */
+    color: white;
+    text-align: start;
+    margin-left: 100px;
   }
   
   .view-more {
@@ -56,8 +61,8 @@
   }
   
   .category img {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%; /* Circular images */
     border: 2px solid #ff4081; /* Pink border */

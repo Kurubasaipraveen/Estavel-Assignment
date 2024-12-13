@@ -52,3 +52,36 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .second-followers-card{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 100px;
+  }
+  .first-card{
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+  }
+  .second-card{
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 20px;
+    
+    width: 200px;
+  }
+  .third-card{
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 20px;
+    
+    width: 200px;
+  }
+  .fourth-card{
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 20px;
+    
+    width: 200px;
+  }

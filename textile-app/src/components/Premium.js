@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Bestselling.css'
+import '../styles/Premium.css'
 function Premium() {
   const products = [
     {
@@ -39,6 +39,24 @@ function Premium() {
             </div>
           </div>
         ))}
+      </div>
+      <div className='second-followers-card'>
+        <div className='first-card'>
+            <h1>1M+</h1>
+            <p>Sq ft stone delivered</p>
+        </div>
+        <div className='second-card'>
+            <h1>2</h1>
+            <p>National/Globally Award</p>
+        </div>
+        <div className='third-card'>
+            <h1>20+</h1>
+            <p>PROJECT COMPLETED</p>
+        </div>
+        <div className='fourth-card'>
+            <h1>99.99%</h1>
+            <p>Customer Satisfied</p>
+        </div>
       </div>
       
     </div>

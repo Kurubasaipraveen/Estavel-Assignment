@@ -1,0 +1,8 @@
+{
+    "search.exclude": {
+        "^#. *\\n?": true
+    },
+    "files.exclude": {
+        "^#. *\\n?": true
+    }
+}

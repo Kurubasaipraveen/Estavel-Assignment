@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/HeroSection.css';
 
 const HeroSection = () => {
+  const [currentContentIndex, setCurrentContentIndex] = useState(0);
+
+  // Array of middle content messages
+  const middleContent = [
+    'Experience The World Of Natural Stones Like Never Before',
+    'Discover Elegance and Durability in Every Piece',
+    'Unveil the Beauty of Nature in Your Space',
+    'Transform Your World with Timeless Stone Designs',
+  ];
+
+  useEffect(() => {
+    // Change content every 2 seconds
+    const interval = setInterval(() => {
+      setCurrentContentIndex((prevIndex) => (prevIndex + 1) % middleContent.length);
+    }, 2000);
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(interval);
+  }, [middleContent.length]);
+
   return (
     <section className="hero-section">
       <div className="hero-container">
@@ -21,7 +41,7 @@ const HeroSection = () => {
 
         {/* Middle Content */}
         <div className="hero-middle">
-          <h1>Experience The World Of Natural Stones Like Never Before</h1>
+          <h1>{middleContent[currentContentIndex]}</h1>
         </div>
 
         {/* Right Images */}

@@ -26,22 +26,24 @@ const Header = () => {
       </nav>
       <div className="actions">
         <div className="search-bar">
+            
           <input
             type="text"
             placeholder="Search for products..."
             className="search-input"
           />
           <button className="search-button">
-            <i className="fa fa-search"></i>
+            <i class="bi bi-search"></i>
           </button>
         </div>
         <button className="cart">
-          <i className="fa fa-shopping-cart"></i>
+        <i class="bi bi-cart3"></i>
           <span className="cart-count">0</span>
         </button>
         <button className="menu">
           <i className="fa fa-bars"></i>
         </button>
+        <i class="bi bi-text-right right-icon"></i>
       </div>
     </header>
   );

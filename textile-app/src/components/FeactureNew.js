@@ -23,18 +23,26 @@ function InTheNews() {
 
   return (
     <div className="in-the-news">
-      <h2>In The News</h2>
-      <button className="view-more">VIEW MORE</button>
-      <div className="news-list">
-        {newsItems.map((item, index) => (
-          <div className="news-item" key={index}>
-            <div className="news-number">{index + 1}</div>
-            <div className="news-content">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+      <div className="news-container">
+        {/* Left Side: News Cards */}
+        <div className="news-header">
+          <h2>In The News</h2>
+          <button>VIEW MORE</button>
+        </div>
+        <div className="news-list">
+          {newsItems.map((item, index) => (
+            <div className="news-item" key={index}>
+              <div className="news-number">{index + 1}</div>
+              <div className="news-content">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Right Side: Heading and Button */}
+        
       </div>
     </div>
   );
