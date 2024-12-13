@@ -1,0 +1,54 @@
+.our-premium-stones {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .our-premium-stones h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .stone-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stone {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .stone img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .stone-info {
+    text-align: center;
+  }
+  
+  .stone-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .stone-info p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .view-more {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

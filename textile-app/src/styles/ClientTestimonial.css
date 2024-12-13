@@ -1,0 +1,125 @@
+/* Main Container */
+.client-testimonial {
+    padding: 40px 20px;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+  }
+  .client-testimonial,h2{
+    color: #fff;
+  }
+  
+  /* Row Layout for Testimonial and Consultation Cards */
+  .testimonial-and-consultation {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* For responsive design */
+  }
+  
+  /* Testimonial Card */
+  .testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Adjust width to fit two cards side by side */
+    box-sizing: border-box;
+    height: 50vh;
+  }
+  
+  .testimonial-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-content p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .rating i {
+    color: #ff9800;
+    font-size: 1.2rem;
+  }
+  
+  .testimonial-content h4 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Consultation Form Card */
+  .consultation-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Adjust width to fit two cards side by side */
+    box-sizing: border-box;
+    height: 90vh;
+  }
+  
+  .consultation-form h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .consultation-form p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .consultation-form input, .consultation-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .consultation-form button {
+    width: 25%;
+    padding: 12px;
+    background-color: #ff4081; /* Pink color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .consultation-form button:hover {
+    background-color: #e0356e; /* Darker pink on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-card, .consultation-form {
+      width: 100%; /* Stack the cards vertically on small screens */
+    }
+  
+    .testimonial-and-consultation {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  

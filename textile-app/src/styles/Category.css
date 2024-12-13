@@ -1,0 +1,112 @@
+/* Main Container */
+.category-container {
+    background-color: #121212; /* Dark background */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .category-header h4 {
+    font-size: 1.2rem;
+    color: #ff4081; /* Pink color for the subheading */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .category-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white; /* Main heading in white */
+  }
+  
+  .view-more {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .view-more:hover {
+    background-color: #e0356e; /* Slightly darker pink on hover */
+    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
+  }
+  
+  /* Categories Section */
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .category img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular images */
+    border: 2px solid #ff4081; /* Pink border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4); /* Shadow on hover */
+  }
+  
+  .category p {
+    font-size: 1rem;
+    color: #ccc; /* Subtle gray color for the category text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .categories {
+      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+      gap: 20px;
+    }
+  
+    .category img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-header h4 {
+      font-size: 1rem;
+    }
+  
+    .category-header h2 {
+      font-size: 2rem;
+    }
+  
+    .view-more {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .categories {
+      gap: 15px;
+    }
+  
+    .category p {
+      font-size: 0.9rem;
+    }
+  }
+  

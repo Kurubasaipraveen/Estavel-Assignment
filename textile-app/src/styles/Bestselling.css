@@ -1,0 +1,110 @@
+/* Main Container */
+.best-selling-products {
+    background-color:#fff; /* Dark background */
+    color: black;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin-left: 200px;
+    height: 100vh;
+  }
+  
+  /* Headings Section */
+  .best-selling-products h4 {
+    font-size: 1.2rem;
+    color: #ff4081; /* Pink color for the subheading */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  
+  .best-selling-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black; /* Main heading in white */
+  }
+  
+  /* Button in Top-Right Corner */
+  .view-more {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4081; /* Pink button */
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .view-more:hover {
+    background-color: #e0356e; /* Slightly darker pink on hover */
+    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
+  }
+  
+  /* Product List */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 30px;
+  }
+  
+  .product {
+    padding: 15px;
+    text-align: center;
+    width: calc(15% - 20px);
+    
+  }
+  
+  
+  
+  .product img {
+    width: 150%;
+    height: 50%;
+    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  .product-info p {
+    font-size: 1rem;
+    color: #ff4081; /* Pink price text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .view-more {
+      top: 10px;
+      right: 10px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .product {
+      width: calc(50% - 20px); /* Two items per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product {
+      width: calc(100% - 20px); /* One item per row */
+    }
+  
+    .best-selling-products h2 {
+      font-size: 2rem;
+    }
+  
+    .view-more {
+      font-size: 0.8rem;
+    }
+  }
+  
