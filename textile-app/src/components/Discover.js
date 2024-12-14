@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/Discover.css'
+import '../styles/Discover.css';
+
 function StonepediaExclusive() {
   const stones = [
     { name: 'Marble', image: 'https://stonepedia.in/wp-content/uploads/2023/04/Marble-1.jpg' },
@@ -12,19 +13,21 @@ function StonepediaExclusive() {
 
   return (
     <div className="stonepedia-exclusive">
-    <div className='discover-card'>
-      <h4 className='head1'>Explore the finest stones we offer</h4>
-      <h2 className='head'>StonePedia Exclusive</h2>
-      <div className="stone-list">
-        {stones.map((stone) => (
-          <div className="stone" key={stone.name}>
-            <img src={stone.image} alt={stone.name} />
-            <p>{stone.name}</p>
-          </div>
-        ))}
+      <div className="discover-card">
+        <h4 className="head1">Explore the finest stones we offer</h4>
+        <h2 className="head">StonePedia Exclusive</h2>
+        <div className="stone-list">
+          {stones.map((stone) => (
+            <div className="stone-card" key={stone.name}>
+              <div className="stone">
+                <img src={stone.image} alt={stone.name} className='image-stone' />
+              </div>
+              <p className="stone-name">{stone.name}</p>
+            </div>
+          ))}
+        </div>
+        <button className="view-more">VIEW MORE</button>
       </div>
-      <button className="view-more">VIEW MORE</button>
-    </div>
     </div>
   );
 }

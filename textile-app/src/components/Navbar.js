@@ -11,10 +11,7 @@ const Header = () => {
           alt="Stone Pedia Logo"
           className="logo-image"
         />
-        <span className="logo-text">
-          <strong>Stone Pedia</strong>
-          <span className="tagline">It's all about Stones</span>
-        </span>
+       
       </div>
       <nav className="navigation">
         <a href="#shop" className="nav-link">

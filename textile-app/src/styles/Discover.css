@@ -1,96 +1,83 @@
 /* Main Container */
 .stonepedia-exclusive {
-    background-color:black; /* Light background */
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-    position: relative;
-    
-  }
-  
-  /* Headings Section (In Column) */
-  .stonepedia-exclusive h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-left: 100px;
-  }
-  
-  .stonepedia-exclusive h4 {
-    font-size: 1.2rem;
-    color: #8b0000; 
-    
-    margin-left: 100px;
-  }
-  
-  /* Button in Top-Right Corner */
-  .view-more {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #ff4081; /* Pink color */
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .view-more:hover {
-    background-color: #e0356e; /* Darker pink on hover */
-    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
-  }
-  
-  /* Stone List */
-  .stone-list {
-    display: flex;
-    flex-wrap: wrap;
-    
-    margin-top: 20px;
-    
-    margin-left: 100px;
-  }
-  
-  .stone {
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(30.0% - 20px);
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .stone:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  }
-  
-  .stone img {
-    width: 90%;
-    height: auto;
-  }
-  
-  .stone p {
-    font-size: 1.1rem;
-    color: #fff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .stone {
-      width: calc(50% - 20px); /* Two items per row */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .stone {
-      width: 100%; /* One item per row */
-    }
-  
-    .view-more {
-      padding: 8px 16px;
-      font-size: 0.9rem;
-    }
-  }
-  
+  background-color: black;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  height: auto;
+}
+
+.discover-card {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.head {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.head1 {
+  font-size: 1.2rem;
+  color: #8b0000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.view-more {
+  display: block;
+  margin: 20px auto;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #e0356e;
+  box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
+}
+
+/* Stone List */
+.stone-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.stone-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(30.33% - 20px); 
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stone-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stone,.image-stone {
+  width: 100%; /* Keep images responsive */
+  height: auto;
+  border-radius: 5px;
+  border: none;
+}
+
+.stone-name {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+}

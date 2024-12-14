@@ -1,117 +1,106 @@
-/* Main Container */
 .category-container {
-    background-color: #121212; /* Dark background */
-    color: white;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    height: 100vh;
-  }
-  
-  /* Header Section */
-  .category-header h4 {
-    font-size: 1.2rem;
-    color: #ff4081; /* Pink color for the subheading */
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: start;
-    margin-left: 100px;
-  }
-  
-  .category-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: white;
-    text-align: start;
-    margin-left: 100px;
-  }
-  
-  .view-more {
-    background-color: #ff4081; /* Pink button */
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 20px;
-  }
-  
-  .view-more:hover {
-    background-color: #e0356e; /* Slightly darker pink on hover */
-    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
-  }
-  
-  /* Categories Section */
-  .categories {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-  }
-  
-  .category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .category img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%; /* Circular images */
-    border: 2px solid #ff4081; /* Pink border */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .category img:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
-    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4); /* Shadow on hover */
-  }
-  
-  .category p {
-    font-size: 1rem;
-    color: #ccc; /* Subtle gray color for the category text */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .categories {
-      flex-wrap: wrap; /* Allow wrapping for smaller screens */
-      gap: 20px;
-    }
-  
-    .category img {
-      width: 100px;
-      height: 100px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .category-header h4 {
-      font-size: 1rem;
-    }
-  
-    .category-header h2 {
-      font-size: 2rem;
-    }
-  
-    .view-more {
-      padding: 8px 20px;
-      font-size: 0.9rem;
-    }
-  
-    .categories {
-      gap: 15px;
-    }
-  
-    .category p {
-      font-size: 0.9rem;
-    }
-  }
-  
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #000;
+  height: 100vh;
+}
+
+.category-header h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: start;
+}
+
+.category-header h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: start;
+
+}
+
+.view-more {
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #e0356e;
+}
+
+.categories-wrapper {
+  overflow: hidden; /* Hide the overflowing images */
+  margin-top: 20px;
+  position: relative;
+}
+
+.categories {
+  display: flex;
+  width: 200%; /* Make the width big enough to fit all images */
+}
+
+.category {
+  width: 20%; /* Each category takes up 20% (5 categories per row) */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Dots */
+.dots {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ff4081;
+}
+.view-more {
+  display: block;
+  margin: 20px auto;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #e0356e;
+  box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
+}
