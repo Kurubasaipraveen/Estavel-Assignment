@@ -69,8 +69,7 @@
 }
 
 .stone,.image-stone {
-  width: 100%; /* Keep images responsive */
-  height: auto;
+  width: 200px;
   border-radius: 5px;
   border: none;
 }
@@ -79,5 +78,4 @@
   font-size: 1.1rem;
   color: #fff;
   margin-top: 10px;
-  text-align: center;
 }
