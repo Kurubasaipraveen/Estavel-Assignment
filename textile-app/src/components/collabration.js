@@ -68,7 +68,6 @@ function OurValuableClients() {
       <h4>Our Clients</h4>
       <h2>Our Valuable Clients</h2>
 
-      {/* Client logos container for left to right scrolling */}
       <div className="client-list" ref={clientListRefLeft}>
         {clients.concat(clients).map((client) => (
           <div className="client" key={client.name}>
@@ -77,7 +76,6 @@ function OurValuableClients() {
         ))}
       </div>
 
-      {/* Client logos container for right to left scrolling */}
       <div className="client-list" ref={clientListRefRight}>
         {clientssecond.concat(clientssecond).map((client) => (
           <div className="client" key={client.name}>

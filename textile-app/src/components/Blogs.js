@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import '../styles/Blogs.css'; // Import the CSS file
+import '../styles/Blogs.css';
 
 const Blog = () => {
   const blogPosts = [
@@ -58,7 +58,7 @@ const Blog = () => {
   const handleScrollLeft = () => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({
-        left: -300, // Adjust this value to scroll one item at a time
+        left: -300,
         behavior: 'smooth',
       });
     }
@@ -68,7 +68,7 @@ const Blog = () => {
   const handleScrollRight = () => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({
-        left: 300, // Adjust this value to scroll one item at a time
+        left: 300, 
         behavior: 'smooth',
       });
     }

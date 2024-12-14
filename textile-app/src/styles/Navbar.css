@@ -5,12 +5,12 @@
     padding: 10px 20px;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ddd;
-    position: fixed; /* Fix the navbar at the top */
+    position: fixed; 
     top: 0; 
     left: 0;
     right: 0;
-    z-index: 1000; /* Make sure the navbar stays on top of other content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a better effect */
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   }
   .logo {
     display: flex;
@@ -34,7 +34,7 @@
   
   .logo-text strong {
     font-size: 1.2em;
-    color: #8b0000; /* Match the text color */
+    color: #8b0000; 
   }
   
   .tagline {
@@ -56,7 +56,7 @@
   }
   
   .nav-link:hover {
-    color: #8b0000; /* Highlight color */
+    color: #8b0000; 
   }
   
   .actions {

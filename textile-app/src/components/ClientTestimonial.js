@@ -16,7 +16,6 @@ function ClientTestimonial() {
         <h2>What Our Happy Clients Say About Us</h2>
       <div className="testimonial-and-consultation">
         
-        {/* Testimonial Card - Carousel */}
         <div className="testimonial-card">
           <div className="testimonial-content">
             <img src={testimonial.avatar} alt={testimonial.name} className="avatar" />
@@ -30,7 +29,6 @@ function ClientTestimonial() {
           </div>
           
         </div>
-        {/* Consultation Form Card */}
         <div className="consultation-form">
           <h2>Book Consultation Now</h2>
           <p>Our dedicated team will get back to you within 24 hours.</p>

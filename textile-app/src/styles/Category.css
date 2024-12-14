@@ -43,11 +43,11 @@
 
 .categories {
   display: flex;
-  width: 200%; /* Make the width big enough to fit all images */
+  width: 200%; 
 }
 
 .category {
-  width: 20%; /* Each category takes up 20% (5 categories per row) */
+  width: 20%; 
   padding: 10px;
   box-sizing: border-box;
   text-align: center;

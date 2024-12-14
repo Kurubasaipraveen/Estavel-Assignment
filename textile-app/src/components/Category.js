@@ -18,7 +18,7 @@ const Category = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleDotClick = (index) => {
-    setCurrentIndex(index * 5); // Move to the set of 5 images based on the clicked dot
+    setCurrentIndex(index * 5); 
   };
 
   return (

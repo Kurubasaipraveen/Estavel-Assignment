@@ -88,7 +88,6 @@ const Footer = () => {
         <p>Copyright © 2024 - StonePedia Private Limited. All Rights Reserved.</p>
       </div>
 
-      {/* Scroll to top button */}
       <button className="back-to-top" onClick={scrollToTop}>^</button>
     </footer>
   );

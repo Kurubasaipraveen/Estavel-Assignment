@@ -1,6 +1,6 @@
-/* Main Container */
+
 .best-selling-products {
-    background-color:#fff; /* Dark background */
+    background-color:#fff; 
     color: black;
     padding: 40px 20px;
     font-family: 'Arial', sans-serif;
@@ -9,10 +9,9 @@
     height: 100vh;
   }
   
-  /* Headings Section */
   .best-selling-products h4 {
     font-size: 1.2rem;
-    color: #ff4081; /* Pink color for the subheading */
+    color: #ff4081; 
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;

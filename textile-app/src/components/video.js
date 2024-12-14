@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/video.css'; // Import the corresponding CSS
+import '../styles/video.css'; 
 
 const FullScreenVideo = () => {
   return (

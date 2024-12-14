@@ -24,7 +24,6 @@ function InTheNews() {
   return (
     <div className="in-the-news">
       <div className="news-container">
-        {/* Left Side: News Cards */}
         <div className="news-header">
           <h2>In The News</h2>
           <button>VIEW MORE</button>

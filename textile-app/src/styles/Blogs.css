@@ -1,7 +1,7 @@
 .blog-section {
     padding: 20px;
     text-align: center;
-    position: relative; /* To allow absolute positioning of buttons */
+    position: relative; 
     margin-left: 200px;
     background-color: #fff;
   }
@@ -12,7 +12,7 @@
   .blog-posts {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: hidden; /* Hide the scrollbar */
+    overflow-x: hidden; 
     margin: 0;
     padding: 10px 0;
     position: relative;
@@ -21,7 +21,7 @@
   
   .blog-post {
     flex: 0 0 auto;
-    width: 300px; /* Adjust the width of each blog post */
+    width: 300px; 
     margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -80,7 +80,6 @@
     text-decoration: underline;
   }
   
-  /* Scroll button styles */
   .scroll-button {
     position: absolute;
     top: 50%;
@@ -97,10 +96,10 @@
   }
   
   .scroll-button-left {
-    left: 20px; /* Slightly from the left */
+    left: 20px; 
   }
   
   .scroll-button-right {
-    right: 20px; /* Slightly from the right */
+    right: 20px; 
   }
   
